@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <!-- Website Title & Description for Search Engine purposes -->
+    <title></title>
+    <meta name="description" content="" />
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Bootstrap CSS -->
+       
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="javascript/modernizr-2.6.2.min.js"></script>
+       
+    <!-- This code piece is taken from Facebook Developers-->
+    <script type="javascript/journal.js">
+       
+    </script>
+
+		
+	</head>
+	<body>
+	
+	<div class="container" id="main">
+     
+        	
+        	
+        <div class= "navbar navbar-fixed-top bkhead">
+            	<div class="container">
+		
+		<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+		<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+		</button>
+		
+		<div class="nav-collapse collapse navbar-responsive-collapse bkhead">
+			<ul class="nav navbar-nav">
+                <li><a href="index.html" target="_blank">Home</a></li>
+							
+				<li class="nav navbar-nav">
+                    <a href="inspire.html" target="_blank">How to use GLIB</a>
+                </li>
+                <li>
+					<a href="recommend.aspx" target="_blank">Our Recommendations</a>
+                   
+				</li>
+                <li class="nav navbar-nav">
+                    <a href="glib.html " target="_blank">GLIB Book Search</a>
+				</li>
+                <li class="nav navbar-nav active">
+					<a href="#">GLIB Journal Search</a>
+                   
+				</li>
+                <li class="nav navbar-nav" >
+					<a href="doc.html" target="_blank">Documentation</a>
+                   
+				</li>
+            </ul>
+			
+			
+            
+			
+	
+		</div><!-- end nav-collapse -->
+	
+	</div><!-- end container -->
+
+        </div>
+          <ul class="nav navbar-nav pull-right glib">
+                <li>
+                    <div id="auth-status">
+<div id="auth-loggedout">
+
+<div class="fb-login-button" autologoutlink="true" scope="email,user_checkins">
+                                                                                Login with Facebook</div>
+</div>
+<div id="auth-loggedin" style="display: none">
+Hi, <span id="auth-displayname"></span>(<a href="glib - JournalSearch.html" id="auth-logoutlink">logout</a>)
+    <span><a href="user.aspx" target="_blank"> View Account</a></span>
+</div>
+</div></li>
+
+            </ul>
+        <div class="responsive col-sm-12">
+            <p class="lead"> Type in a search term for the latest journals in your favorite field.</p>
+              <div class="col-sm-12 bl responsive">
+                    <div class="input-group responsive col-sm-12">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" onclick="SearchJournals()" type="button">Search</button>
+                        </span>
+                        <input type="text" id="txtSearchJournals" style="width: 200px;"  placeholder="Search for journal......." class="form-control" />
+                         </div>
+                  
+                </div> </div>
+        <div class="row">
+
+                <div class="col-sm-12 table-responsive" onclick="cellClicked()">
+                    <table class="table responsive" style="float: right; clear: right;" id="tblJournalSearchResults">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Title &nbsp; &nbsp; </th>
+                                <th>ISSN &nbsp; &nbsp; </th>
+                                <th>Publisher &nbsp; &nbsp; </th>
+                             </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div> </div>
+           
+       
+
+        <div class="row" id="featuresHeading">
+            <div class="col-12">
+
+                <h2>The GLIB Works</h2>
+
+            </div>
+        </div>
+        <div class="row" id="features">
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CELEB SPEAK</h3>
+
+                    </div>
+                    <img src="../Images/twitter.jpg" alt="Celeb Speak" class="img-circle" />
+                    <p> Catch the latest tweets from celebrities</p>
+                    <a href="#myModal1" data-toggle="modal" target="_blank" class="btn btn-warning btn-block">
+                        Get to know the buzz
+                    </a>
+                    <div class="modal fade" id="myModal1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">HEAR WHAT THE LITERARY GENIUSES HAVE TO SAY</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="510" height="400" style="border:none;" src="http://output78.rssinclude.com/output?type=iframe&amp;id=863476&amp;hash=7ee2ed0fa0e18161e4d4a1d5a34fdb0f"></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">LATEST PUBLICATIONS</h3>
+
+                    </div>
+                    <img src="images/news.jpg" alt="News" class="img-circle" />
+                    <p> Find out the latest Book releases</p>
+                    <a href="#myModal2" data-toggle="modal" target="_blank" class="btn btn-danger btn-block"> Click for the News</a>
+                    <div class="modal fade" id="myModal2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">PUBLICATION NEWS</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe class="col-push-4" width="510" height="400" style="border:none;" src="http://output70.rssinclude.com/output?type=iframe&amp;id=863489&amp;hash=08ea60c2efd1b2a9d766ce07df5e8b19"></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CONTACT US</h3>
+
+                    </div>
+                    <img src="../images/contact.jpg" alt="Contact Us" class="img-circle" />
+                    <p> Connect with us</p>
+                    <a href="#myModal3" data-toggle="modal" target="_blank" class="btn btn-warning btn-block"> Click for connecting</a>
+                    <div class="modal fade" id="myModal3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Contact Us</h4>
+                                </div>
+                                <div class="modal-body">
+
+                                    What do you think about the website and its contents?
+                                    <br />
+                                    How do you want us to improve?<br />
+                                    Just want to chat about the literary world?
+
+                                    <hr />
+                                    <h3>Connect with us through the following links.</h3>
+
+                                    <a href="https://www.facebook.com/shivastuti.koul?ref=tn_tnmn"
+                                       target="_blank">
+                                        <img src="../Images/fb.jpg" title="Find me on Facebook"
+                                             height="30px" width="30px" />
+                                    </a>
+
+                                    <a href="http://www.linkedin.com/pub/shivastuti-koul/23/ab8/506/"
+                                       target="_blank">
+                                        <img src="../Images/linkedin.png" title="Find me on Linkedin"
+                                             height="30px" width="30px" />
+                                    </a>
+                                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="emilyvyoma">Tweet</a>
+
+                                    <br />
+                                    <div class="fb-like " data-href="http://net4.ccs.neu.edu/home/koulsh16/"
+                                         data-send="true" data-width="350" data-show-faces="true">
+                                    </div>
+
+                                                                   </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row" id="feature">
+
+        </div>
+       
+        <div class="row" id="moreClasses">
+
+        </div>
+
+    </div>
+    <footer class="foot">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+			<h6>Copyright &copy; 2014 {Shivastuti}</h6>
+			</div><!-- end col-sm-2 -->
+			
+						
+			<div class="col-sm-3">
+				<h6>Navigation</h6>
+				<ul class="unstyled">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="recommend.aspx" target="_blank">Reccomendations</a></li>
+					<li><a href="doc.html" target="_blank">Project Documentation</a></li>
+					<li><a href="inspire.html" target="_blank"> Demo</a></li>
+				</ul>
+			</div><!-- end col-sm-2 -->
+			
+			<div class="col-sm-3">
+				<h6>Follow Us</h6>
+				<ul class="unstyled">
+					<li><a href="https://www.facebook.com/shivastuti.koul?ref=tn_tnmn"
+                    target="_blank">Facebook</a></li>
+					<li><a href="https://twitter.com/share" target="_blank" data-via="emilyvyoma">Twitter</a></li>
+                     <li><a href="http://www.linkedin.com/pub/shivastuti-koul/23/ab8/506/"
+                    target="_blank">LinkedIn</a></li>                  
+                 
+                 
+
+				</ul>
+			</div><!-- end col-sm-2 -->
+			
+			<div class="col-sm-3">
+				<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Shivastuti Koul</h6>
+			</div><!-- end col-sm-2 -->
+		</div><!-- end row -->
+	</div><!-- end container -->
+</footer>
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+    <!-- Bootstrap JS -->
+    <script src="javascript/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="javascript/script.js"></script>
+    <script type="text/javascript">
+
+        var currentPageIndex = 1;
+        var TotalResult = 0;
+        var count = 0;
+
+        function SearchJournals() {
+
+            var searchText = $('#txtSearchJournals').val();
+
+            if (searchText != '' && searchText != undefined) {
+
+                $("#tblJournalSearchResults").find("tr:gt(0)").remove();
+                var url = 'search.aspx/result';
+                $.ajax({
+                    type: "POST",
+                    data: JSON.stringify({ 'searchtext': searchText }),
+                    url: url,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (xml) {
+                        var xmlDoc = $.parseXML(xml.d);
+                        $(xmlDoc).find('journal').each(function () {
+                            var title = $(this).find('jtitle').text();
+                            var issn = $(this).find('issn').text();
+                            var zetoc = $(this).find('zetocpub').text();
+                            
+                            if (count < 10) {
+                                $('#tblJournalSearchResults').append('<tr><td><img width="100" height="100" hspace="10px" src="images/images.jpg"></td><td>' + title + '</td><td>' + issn + '</td><td>' + zetoc + '</td><td>');
+                                count++;
+                            }
+                        });
+
+                    }
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
+

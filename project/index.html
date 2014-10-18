@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+       
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="javascript/modernizr-2.6.2.min.js"></script>
+       
+    <!-- This code piece is taken from Facebook Developers-->
+    <script  src="javascript/index.js">
+        
+    </script>
+
+                	
+	</head>
+	<body onload="noBack();">
+        onpageshow="if (event.persisted) noBack();" onunload="">
+	
+	<div class="container" id="main">
+        
+        	
+        	
+        <div class= "navbar navbar-fixed-top bkhead">
+            	<div class="container">
+		
+		<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+		<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+           
+		</button>
+                    
+		
+		<div class="nav-collapse collapse navbar-responsive-collapse bkhead">
+			<ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+							
+				<li class="nav navbar-nav">
+                    <a href="inspire.html" target="_blank">How to use GLIB</a>
+                </li>
+                <li>
+					<a href="recommend.aspx" target="_blank">Our Recommendations</a>
+                   
+				</li>
+                <li class="nav navbar-nav">
+                    <a href="glib.html " target="_blank">GLIB Book Search</a>
+				</li>
+                <li class="nav navbar-nav">
+					<a href="glib - JournalSearch.html" target="_blank">GLIB Journal Search</a>
+                   
+				</li>
+                <li class="nav navbar-nav" >
+					<a href="doc.html" target="_blank">Documentation</a>
+                   
+				</li>
+            </ul>
+			
+			
+            
+			
+	
+		</div><!-- end nav-collapse -->
+	
+	</div><!-- end container -->
+
+        </div>
+        <div class="carousel slide" id="myCarousel">
+<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+		<li data-slide-to="1" data-target="#myCarousel"></li>
+		<li data-slide-to="2" data-target="#myCarousel"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+		<div class="item active" id="slide1">
+			<div class="carousel-caption">
+				<h4>Global Library</h4>
+				<p>FOR THOSE WHO LOVE THE FRAGRANCE OF PAPERBACKS</p>
+			</div><!-- end carousel-caption-->
+		</div><!-- end item -->
+		
+		<div class="item" id="slide2">
+			<div class="carousel-caption">
+				<h4>KNOW THY TEXT</h4>
+				<p> HELPS THE BOOK LOVERS DISCOVER THE LATEST PUBLICATIONS ON THE BLOCK.</p>
+			</div><!-- end carousel-caption-->
+		</div><!-- end item -->
+		
+		<div class="item" id="slide3">
+			<div class="carousel-caption">
+				<h4 class="myfont">YOUR SECRET TREASURE</h4>
+				<p class="myfont">FIND THE LATEST JOURNALS.</p>
+			</div><!-- end carousel-caption-->
+		</div><!-- end item -->
+	</div><!-- carousel-inner -->
+	
+	<!-- Controls -->
+	<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+	<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+        </div>
+        <div class="row" id="bigCallout">     
+            <div class="col-12">
+                                                 <div class="well sbig">
+                    <div class="page-header">
+                        <h1> GLIB Application<small> Get your book collection on your phone now.</small></h1>
+                    </div>
+                    <p class="lead"> Food for your ravenous intellect always in your pocket.Its like carrying
+                        your little library in your pocket.
+                    </p>
+                    <a href="glib.html" target="_blank" class="btn btn-large btn-primary">Click to search books</a>
+                    <a href="inspire.html" target="_blank" class="btn btn-large btn-link">How to use GLIB</a>
+                    <br /><br />
+                    <p class="lead pull-left"> It doesn't get simpler than signing in using your facebook account!!
+                        A social library ALAS!!!&nbsp;&nbsp;
+
+                                        <div id="auth-status">
+                                           
+<div id="auth-loggedout">
+
+<div class="fb-login-button" autologoutlink="true" scope="email,user_checkins">
+                                                                                Login</div>
+</div>
+<div id="auth-loggedin" style="display: none">
+Hi, <span id="auth-displayname"></span>(<a href="index.html" id="auth-logoutlink">logout</a>)
+    <span><a href="user.aspx"> View Account</a></span>
+</div>
+</div></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" id="featuresHeading">
+            <div class="col-12">       
+
+                <h2>The GLIB Works</h2>
+                
+            </div>
+            </div>
+         <div class ="row" id="features">
+             <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading sys">
+                        <h3 class="panel-title sys">CELEB SPEAK</h3>
+
+                    </div>
+                    <img src="../images/twitter.jpg" alt="Celeb Speak" class="img-circle"/>
+                    <p> Catch the latest tweets from celebrities</p>
+                    <a href="#myModal1" data-toggle="modal" target="_blank" class="btn btn-warning btn-block"> 
+                        Get to know the buzz</a>
+                     <div class="modal fade" id="myModal1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">HEAR WHAT THE LITERARY GENIUSES HAVE TO SAY</h4>
+                                </div>
+                                <div class="modal-body">
+                                   <iframe width="510" height="400" style="border:none;" src="http://output78.rssinclude.com/output?type=iframe&amp;id=863476&amp;hash=7ee2ed0fa0e18161e4d4a1d5a34fdb0f"></iframe>
+                                    
+                                </div>
+                                    <div class="modal-footer">
+                                       <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                           Close</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div> 
+  
+                    
+                </div>
+             </div>
+             <div class="col-sm-4 feature">
+                <div class="panel responsive">
+                    <div class="panel-heading sys">
+                        <h3 class="panel-title">LATEST PUBLICATIONS</h3>
+
+                    </div>
+                    <img src="../images/news.jpg" alt="News" class="img-circle" />
+                    <p> Find out the latest Book releases</p>
+                    <a href="#myModal2" data-toggle="modal" target="_blank" class="btn btn-danger btn-block"> Click for the News</a>
+                      <div class="modal fade" id="myModal2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">PUBLICATION NEWS</h4>
+                                </div>
+                                <div class="modal-body">
+                                   <iframe class="col-push-4" width="510" height="400" style="border:none;" src="http://output70.rssinclude.com/output?type=iframe&amp;id=863489&amp;hash=08ea60c2efd1b2a9d766ce07df5e8b19"></iframe>
+                                    
+                                </div>
+                                    <div class="modal-footer">
+                                       <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                           Close</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>   
+                    
+                </div>
+             
+             
+             
+             
+             
+             
+             
+             
+             </div>
+             <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CONTACT US</h3>
+
+                    </div>
+                    <img src="../images/contact.jpg" alt="Contact Us" class="img-circle"/>
+                    <p> Connect with us</p>
+                    <a href="#myModal3" data-toggle="modal" target="_blank" class="btn btn-warning btn-block"> Click for connecting</a>
+                      <div class="modal fade" id="myModal3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Contact Us</h4>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                        What do you think about the website and its contents?
+                                        <br />
+                                        How do you want us to improve?<br />
+                                        Just want to chat about the literary world?
+                                    
+                                    <hr />
+                                    <h3>Connect with us through the following links.</h3>
+                                  
+                <a href="https://www.facebook.com/shivastuti.koul?ref=tn_tnmn"
+                    target="_blank">
+                <img src="../images/fb.jpg" title="Find me on Facebook"
+                        height="30" width="30" />
+                 </a>
+                   
+                 <a href="http://www.linkedin.com/pub/shivastuti-koul/23/ab8/506/"
+                    target="_blank">
+                 <img src="../images/linkedin.png" title="Find me on Linkedin"
+                      height="30" width="30" />
+                  </a> 
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="emilyvyoma">Tweet</a>
+
+                <br />
+                <div class="fb-like " data-href="http://net4.ccs.neu.edu/home/koulsh16/"
+                    data-send="true" data-width="350" data-show-faces="true">
+                </div>
+           
+                                    <p>You can email me at emilyvyomahallaway.shiva@gmail.com</p>    
+                                                                    
+                                </div>
+                                    <div class="modal-footer">
+                                       <button class="btn btn-danger" data-dismiss="modal" type="button">
+                                           Close</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div> 
+                      
+                    
+                </div>
+             </div>
+        </div>
+        <div class="row" id="feature">
+
+        </div>
+        <div class="row" id="moreInfo">
+            <div class="col-sm-12">
+                <h3> Blogs</h3>
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">About Me</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Blogs</a></li>
+                    </ul>
+                    <div class="tab-content panl">
+                        <div class="tab-pane active panl" id="tab1">
+                            <h4><span class="glyphicon glyphicon-map-marker"></span> My Location - Northeastern University<small> More like my last location since I am a 
+                                wanderer in search of inspiration</small></h4>
+
+                            <iframe class="pull-left tab responsive" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d94389.04452382123!2d-71.0767897!3d42.3285004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a1999cf5ce1%3A0xc97b00e66522b98c!2sNortheastern+University!5e0!3m2!1sen!2sus!4v1396917766860" width="100%" height="450" style="border:0"></iframe>
+                           <h4>About Me</h4>
+                             <p> Quote ‘Efficiency and Perfection is the art of living’ Unquote-This statement rules every aspect of my life. It is not being ambitious or having goals that drives me, but what really keeps me going and craving for more knowledge is the inquisition “What next?” i.e. after a specific target is achieved, what more can be learnt from the surroundings and what can be the next goal. It is this need to know more that coaxed me to participate in a variety of curricular and co-curricular activities throughout my school life and college life and even in being a part of many initiatives at work as well. I don’t believe that anything can be perfect. It might sound contrary to the first statement of this essay but if we deem something perfect we neglect the scope of improvement which is imperative to actually get closer to achieving something impeccable. Thus, I believe that we must aim for perfection, because if we aim high, we would end up reaching pretty close to it, if not achieving ‘it’ absolutely.
+                                I belong to a small family comprising of my parents, grandmother and a younger brother besides me. My father is a Government official and my mother is a high school teacher. My parents have been a constant source of inspiration to me. They have always encouraged both their kids to question what already is and to be creative in thoughts. I believe a very important part of what actually makes me the strong, forthright and passionate person that I am is the sense of independence that they imbued in us since childhood. The independence to give vent to my thoughts, the freedom to express in written, vocal and other artistic ways and the strongly imbibed belief that imagination has no bounds, hence forms the core layer of my persona. I have learnt from them the fact about being the change that you want to see since they are actively involved in various social upliftment programs. This inspired me to be a part of various social causes like the education of underprivileged children, spreading awareness about blood donation, working for the Wildlife society at the school. I had been a member of the school student council and the President of the YSM (Young Students Movement) that conducted these social awareness and upliftment programs in the city on behalf of my school. 
+                                I believe “To be is not the question, it is to be your real self”. It is important to be aware of ourselves and for such realization knowledge is the only key. Thus in my pursuit of knowledge, I aspire to discover my real self.
+                            </p>
+                            </div>
+                            <div class="tab-pane panl" id="tab2">
+                               <iframe width="100%" height="800"  style="border:none;" src="http://output53.rssinclude.com/output?type=iframe&amp;id=863516&amp;hash=da394d016873b8c30dfd3fed8b25999e"></iframe>
+
+
+
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" id="moreClasses">
+
+       </div>
+        </div>
+        <footer class="foot">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+			<h6>Copyright &copy; 2014 {Shivastuti}</h6>
+			</div><!-- end col-sm-2 -->
+			
+						
+			<div class="col-sm-3">
+				<h6>Navigation</h6>
+				<ul class="unstyled">
+					<li><a href="#">Home</a></li>
+					<li><a href="recommend.aspx" target="_blank">Reccomendations</a></li>
+					<li><a href="doc.html" target="_blank">Project Documentation</a></li>
+					<li><a href="inspire.html" target="_blank"> Demo</a></li>
+				</ul>
+			</div><!-- end col-sm-2 -->
+			
+			<div class="col-sm-3">
+				<h6>Follow Us</h6>
+				<ul class="unstyled">
+					<li><a href="https://www.facebook.com/shivastuti.koul?ref=tn_tnmn"
+                    target="_blank">Facebook</a></li>
+					<li><a href="https://twitter.com/share" target="_blank" data-via="emilyvyoma">Twitter</a></li>
+                     <li><a href="http://www.linkedin.com/pub/shivastuti-koul/23/ab8/506/"
+                    target="_blank">LinkedIn</a></li>                  
+                 
+                 
+
+				</ul>
+			</div><!-- end col-sm-2 -->
+			
+			<div class="col-sm-3">
+				<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Shivastuti Koul</h6>
+			</div><!-- end col-sm-2 -->
+		</div><!-- end row -->
+	</div><!-- end container -->
+</footer>
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="javascript/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="javascript/script.js"></script>
+	
+	</body>
+</html>
+

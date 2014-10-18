@@ -1,0 +1,92 @@
+﻿.alp {
+background-color:#aa2f2f;color:#FFFFFF;width:130px;padding:5px;text-align:center;font-size:large;border-radius:5px;
+}
+.drag {
+font-size:small;color:black
+}
+.cont {
+background-color:#aa2f2f;color:#FFFFFF;width:100px;padding:5px;border-radius:5px;text-align:center;
+}
+.ht {
+    height: 500px;
+}
+html, body{
+    background:url('../images/skulls.png');
+   
+margin:0px;padding-left:0px;padding-top:0px;padding-bottom:10px;height:100%;
+}
+	#puzzle{margin: 10px;
+height: 400px;
+width: 100%;}
+	#clues{margin:10px;}
+     #div1, #div2, #div3, #div4,#div5, #div6, #div7,#div8, #div9,#div10,#div11, #div12, #div13,#div14,#div15, #div16, #div17,#div18, #div19, #div20, #div21, #div22,#div23,#div24,
+     #div25, #div26, #div27, #div28, #div29, #div30,
+	 #div31, #div32, #div33, #div34,#div35, #div36, #div37,#div38, #div39,#div40,#div41, #div42, #div43,#div44,#div45, #div46, #div47,#div48, #div49, #div50, #div51, #div52,#div53,#div54
+    {float:left; width:50px; height:50px; margin:0px;padding:2px;border:1px solid black;font-size:12px;font-weight:bold;}
+    #div6, #div7,#div9,#div11, #div13,#div15,#div19,#div21,#div22,#div23,#div29,#div31,#div35,#div36,div39,#div43,#div47,#div48,#div52,#div53,#div54{background-color:black;}
+
+#header{
+    background: #aa2f2f;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #7C95A5;
+	height:60px;
+	padding-top:8px;
+	width:100%;
+}
+
+#sub_header{
+    background: #aa2f2f;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	height:50px;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:5px;
+    padding-top:5px;
+}
+
+#page{
+width:960px;
+margin-left:auto;margin-right:auto;padding-top:5px;padding-bottom:5px;
+}
+
+#content_left{
+width:150px;
+//height:600px;
+float:left;
+margin-bottom:10px;
+}
+#content_middle{
+width:350px
+//height:600px;
+float:left;
+margin-left:30px;
+margin-bottom:5px;
+}
+
+#content_right{
+width:300px;
+float:left;
+padding-left:10px;
+margin-left:30px;
+margin-bottom:10px;
+}
+#footer{
+clear:both;
+bottom:0px;
+height:40px;
+left:0px;
+margin-top:15px;
+}
+h1,h3{
+margin-left:auto;margin:auto; text-align:center;
+}
+#heading{
+margin-left:auto;margin-right:auto;text-align:center;background-color:#aa2f2f;font-weight:bold;color:#FFFFFF;border-radius:5px;width:320px;font-size:large;padding:3px;
+}
+#ans{
+margin-top:5px;color:#FFFFFF;
+}

@@ -1,0 +1,3 @@
+../../story/whatisnext.htm?../experiments/JQuery/story.txt      What is Next?
+ConnectWebService.aspx             Connecting to an API and rendering  retrieved data
+JQuery_handling  Using JQery to perform operaations on events.

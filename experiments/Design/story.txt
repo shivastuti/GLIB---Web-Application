@@ -1,0 +1,7 @@
+Home_Page_GLIB.aspx HomePage
+Introduction.aspx GLIB - The Inspiration Layout
+Latest_pubs.aspx Latest Publications layout
+Book_locator.aspx Book Locator layout
+Login-Logout.aspx Login-Logout layout
+User_profile.aspx User Profile layout
+

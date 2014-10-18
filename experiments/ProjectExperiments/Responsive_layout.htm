@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+<style>
+.main {float:left;
+            font-size:20px;
+            width : 600px;  
+
+    
+}
+
+@media (min-width: 50px) and (max-width: 400px) {
+    .main {
+        background-color : red;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+    .main {
+        background-color : green;
+        height : 200px;
+    }
+}
+
+@media (min-width: 801px) {
+    .main {
+        background-color : yellow;
+    }
+}
+.wrapper {
+            
+            width : 800px;
+margin: 0 auto;
+      
+            }
+.sidebar {
+                float : left;
+                width : 200px;
+            }
+    .a {
+        padding: 10px;
+    }
+</style>
+  </head>  
+    <body class ="a">
+        <div>
+  <h1>Media Queries,Centered Content and Side Bars</h1>  
+            <h2>Description</h2>
+            This experiment showcases the use of media queries which resize the contents of the webpage 
+            based on the media on which it is being browsed.
+            Also this experiment highlights the centered content along with a sidebar and how it
+             responds to different 
+            media sizes.
+           The following code consists of media queries of responsiveness: <font color ="red">
+            <pre>@media (min-width: 50px) and (max-width: 400px) {
+    .main {
+        background-color : red;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+    .main {
+        background-color : green;
+        height : 200px;
+    }
+}
+
+@media (min-width: 801px) {
+    .main {
+        background-color : yellow;
+    }
+}</pre></font>
+            The following code formats the main content to be centered and responsive along with the sidebars.
+<pre><font color="red">
+    .wrapper {
+            
+            width : 800px;
+margin: 0 auto;
+      
+            }
+.sidebar {
+                float : left;
+                width : 200px;
+            }
+    .main {float:left;
+            font-size:20px;
+            width : 600px;  
+
+    
+}</font>
+</pre>            
+        </div> 
+   <div> <hr />    <h2>Results</h2>
+<div class="wrapper">                     
+<div class="main">
+<h3>TEST DATA - CENTERED LAYOUT</h3>
+This reflects the centered data that is displayed on the screen and remains 
+    centered while responsive.The color change shows the responsiveness of the webpage with size changes.</div>
+<div class="sidebar">
+                <h3>Side Bar</h3>
+                <a href="http://net4.ccs.neu.edu/home/koulsh16/fileview/Default.aspx?~/Experiments/Week2/Responsive_layout.htm">HTML Source</a> |
+                <p>Displays the sidebar on the screen and shows its responsive behaviour</p>
+            </div></div></div><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <hr /><div>
+        <h2>Sources</h2>
+        <a href="http://net4.ccs.neu.edu/home/koulsh16/fileview/Default.aspx?~/Experiments/Week2/Responsive_layout.htm" target="_blank">Responsive_layout</a>
+   </div> </body>
+</html>

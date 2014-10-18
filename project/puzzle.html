@@ -1,0 +1,226 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>GLIB Word Puzzle</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/puzzle.css" rel="stylesheet">
+    <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+     <link href="css/styles.css" rel="stylesheet">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="javascript/puzzle.js"></script>
+</head>
+<body>
+   
+<div class="container glib">
+<h1 class="responsive">GLIB WORD PUZZLE</h1>
+
+<div class="row responsive ht">
+<div id="page responsive col-lg-12">
+
+<div class="panel responsive col-lg-6 ht">
+    <p class="lead">Game Link - Fullscreen - <a href="puzzle.html">WORD PUZZLE</a> </p>
+<p class="alp responsive col-lg-12">Alphabet</p><br /><br /><br />
+<p class="drag responsive"><strong>Drag and drop</strong> letters into the <em>puzzle</em> from here.</p>
+<img id="i1" src="images/a.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i2" src="images/b.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i3" src="images/c.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i4" src="images/d.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+<img id="i5" src="images/e.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i6" src="images/f.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i7" src="images/g.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i8" src="images/h.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+<img id="i9" src="images/i.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i10" src="images/j.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i11" src="images/k.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i12" src="images/l.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+<img id="i13" src="images/m.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i14" src="images/n.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i15" src="images/o.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i16" src="images/p.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+<img id="i17" src="images/q.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i18" src="images/r.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i19" src="images/s.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i20" src="images/t.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+<img id="i21" src="images/u.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i22" src="images/v.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i23" src="images/w.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i24" src="images/x.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" /><br />
+<img id="i25" src="images/y.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+<img id="i26" src="images/z.jpg" width="30" height="30" draggable="true" ondragstart="drag(event)" />
+  <p style="font-size:small;color:black">Made a <strong>mistake</strong> ? <strong>Just click</strong> the <em>sqaure</em> containing the letter once, to clear it up.</p>
+<p class="responsive" onclick="answers()" style="background-color:#aa2f2f;color:#FFFFFF;width:130px;padding:5px;text-align:center;font-size:medium;border-radius:5px;">Answers</p>
+ </div>
+<div class="panel responsive col-lg-6 ht">
+<!---1st row---->
+<div id="puzzle" class="responsive">
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" >
+  <img src="images/1r.jpg" id="img1" width="30" height="30" alt="letterR" />
+</div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" >
+  <img src="images/2i.jpg" id="img1" width="30" height="30" alt="letterI" />
+ </div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="this.innerHTML=''">
+  </div>
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)" >
+  <img src="images/3g.jpg" id="img1" width="30" height="30" alt="letterG" />
+ </div>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="this.innerHTML=''" >
+  </div>
+<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+  <div style="clear:both;"></div>
+ <!---2nd row---->
+<div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  
+  </div>
+<div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  <!--img src="images/dollar.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="50" height="50"-->
+ 
+ </div>
+<div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)" >
+   <img src="images/5f.jpg" id="img5" width="30" height="30" alt="letterF" />
+ </div>
+  <div style="clear:both;"></div>
+   <!----3rd row---->
+<div id="div13" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div14" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+ </div>
+<div id="div15" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div16" ondrop="drop(event)" ondragover="allowDrop(event)" >
+    <img src="images/6n.jpg" id="img5" width="30" height="30" alt="letter" />
+  </div>
+<div id="div17" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div18" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+  <div style="clear:both;"></div>
+  <!----4th row---->
+<div id="div19" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+ </div>
+<div id="div20" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+ </div>
+<div id="div21" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div22" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div23" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div24" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+  <div style="clear:both;"></div>
+  <!----5th row---->
+<div id="div25" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+   <img src="images/7w.jpg" id="img1" width="30" height="30" alt="letterW" />
+ </div>
+<div id="div26" ondrop="drop(event)" ondragover="allowDrop(event)" >
+  <img src="images/8o.jpg" id="img8" width="30" height="30" alt="letterO" />
+  </div>
+<div id="div27" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div28" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div29" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div30" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+  <div style="clear:both;"></div>
+<!---6th row---->
+<div id="div31" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+</div>
+<div id="div32" ondrop="drop(event)" ondragover="allowDrop(event)" >
+  <img src="images/9n.jpg" id="img9" width="30" height="30" alt="letterN" />
+ </div>
+<div id="div33" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div34" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+   </div>
+<div id="div35" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div36" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+  </div>
+  <div style="clear:both;"></div>
+ <!---7th row---->
+<div id="div37" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+   <img src="images/10h.jpg" id="img10" width="30" height="30" alt="letterH" />
+ </div>
+<div id="div38" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div39" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div40" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  <!--img src="images/dollar.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="50" height="50"-->
+  </div>
+<div id="div41" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div42" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+  <div style="clear:both;"></div>
+   <!----8th row---->
+<div id="div43" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+</div>
+<div id="div44" ondrop="drop(event)" ondragover="allowDrop(event)" >
+   <img src="images/11o.jpg" id="img11" width="30" height="30" alt="letterO" />
+  </div>
+<div id="div45" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div46" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+ </div>
+<div id="div47" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="this.innerHTML=''" >
+  </div>
+<div id="div48" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+  <div style="clear:both;"></div>
+  <!----9th row---->
+<div id="div49" ondrop="drop(event)" ondragover="allowDrop(event)" >
+   <img src="images/aa.jpg" id="img11" width="30" height="30" alt="letterA" />
+  </div>
+<div id="div50" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+ 
+ </div>
+<div id="div51" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="this.innerHTML=''">
+  </div>
+<div id="div52" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div53" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+<div id="div54" ondrop="drop(event)" ondragover="allowDrop(event)"  onclick="this.innerHTML=''" >
+  </div>
+  </div></div>
+    </div>
+<div class="panel col-sm-12 ht">
+<p class="cont">Clues</p>
+<p><strong>Across</strong></p>
+<table class="table-responsive">
+<tr><td>1.</td><td>Evidence that Saturn committed polygamy.</td></tr>
+<tr><td>6.</td><td>A mathematician says: "Divide 1 by the opposite of finite to get this."</td></tr>
+<tr><td>7.</td><td> When Microsoft says it will be on top of Windows-8, we have to believe its ....</td></tr>
+<tr><td>9.</td><td>Formerly Known As</td></tr>
+<tr><td>10.</td><td> Jack never gets greetings from well-wishers at the airport for this fear.</td></tr>
+<tr><td>11.</td><td>Sounded death knell for procedural programming.</td></tr>
+</table>
+<p><strong>Down</strong></p>
+<table>
+<tr><td>2.</td><td>Not a home to invest your money in, for summer.</td></tr>
+<tr><td>3.</td><td>Noble spirits lives in this.</td></tr>
+<tr><td>5.</td><td>Buy one stray dog and get one ....</td></tr>
+<tr><td>8.</td><td>Opinion - 3.142.</td></tr>
+</table>
+
+     <div style="clear:both;"></div> 
+   <p id="ans"><strong>Across:</strong> Rings; Nil; Word; Nee; Hijack; OOP<br />
+  <strong>Down:</strong> Igloo; Gin; Flea; Onion
+  </p>
+</div>
+
+</div>
+    </div>
+   </body>
+</html>

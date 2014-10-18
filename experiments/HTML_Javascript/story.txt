@@ -1,0 +1,7 @@
+../../story/whatisnext.htm?../experiments/HTML_Javascript/story.txt     What is Next?
+DivsandSections.htm                Basic styling for Div and Section
+TextHovering.htm		         Effects of text hovering
+FooterandImagehovering.htm         Image hovering and transition
+CreatingapplestyleNavigation.htm   Navigation toolbar like apple
+YouTubeVideo_Insertion.aspx     Insertion of a youtube presentation into the webpage
+
